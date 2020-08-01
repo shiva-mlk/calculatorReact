@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import Calculator from "./components/buttons"
 
-function App() {
+
+
+class App extends Component{
+  
+  render(){
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{display: 'flex', alignItems: 'center', justifyContent: 'center',
+                                  backgroundImage: "url(" + "https://avante.biz/wp-content/uploads/Galaxy-Wallpaper-Tumblr/Galaxy-Wallpaper-Tumblr-005.jpg" + ")",
+                                  width: "50%",
+                                  height: "400px",
+                                  backgroundPosition: 'center',
+                                  backgroundSize: 'cover'
+                            
+                                   }} >
+      <Calculator/>
     </div>
   );
+  }
 }
 
 export default App;
